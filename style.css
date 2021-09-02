@@ -156,7 +156,7 @@ main {
 }
 
 .content_right {
-    border: solid #880505;
+    border: solid 2px #880505;
     transform: skew(0deg , 5deg) translateX(20px);
     height: 300px;
     padding: 10%;
@@ -172,7 +172,7 @@ main {
 }
 
 .content_left2 {
-    border: solid #880505;
+    border: solid 2px #880505;
     transform: skew(0deg , 5deg) translateX(-20px);
     height: 300px;
     padding: 10%;
