@@ -225,3 +225,98 @@ footer p {
     text-align: center;
     margin-top: 10px;
 }
+
+.animation-target {
+    opacity: 0;
+}
+
+@keyframes flow {
+    0% {
+        opacity: 0;
+        transform: translateY(80px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animation-target.active {
+    animation: flow 1s forwards;
+}
+
+.animation-target-left {
+    opacity: 0;
+}
+
+@keyframes left-slide {
+    0% {
+        opacity: 0;
+        transform: skew(0deg , 5deg) translateX(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: skew(0deg , 5deg) translateX(-20px);
+    }
+}
+
+.animation-target-left.active {
+    animation: left-slide 1s forwards;
+}
+
+.animation-target-right {
+    opacity: 0;
+}
+
+@keyframes right-slide {
+    0% {
+        opacity: 0;
+        transform: skew(0deg , 5deg) translateX(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: skew(0deg , 5deg) translateX(20px);
+    }
+}
+
+.animation-target-right.active {
+    animation: right-slide 1s forwards;
+}
+
+.animation-target-delay {
+    opacity: 0;
+}
+
+@keyframes delayflow {
+    0% {
+        opacity: 0;
+        transform: translateY(80px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animation-target-delay.active {
+    animation: delayflow 1s .8s forwards;
+}
+
+.animation-delay {
+    opacity: 0;
+}
+
+@keyframes delay {
+    0% {
+        opacity: 0;
+        transform: skew(0deg , -5deg) translateY(80px);
+    }
+    100% {
+        opacity: 1;
+        transform: skew(0deg , -5deg) translateY(0);
+    }
+}
+
+.animation-delay.active {
+    animation: delay 1s .8s forwards;
+}
